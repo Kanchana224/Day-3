@@ -1,0 +1,291 @@
+
+Queastion 1
+      var a
+      var b
+      var c
+      var d
+      console.log(a,b,c,d)
+Question 2 
+      var myvar=1
+      console.log(myvar) 
+Question 3 
+      var firstname="kanchana"
+      var lastname="devi"
+      var maritalstatus="single"
+      var country="india"
+      var age=23 
+Question 4
+      var firstname="kanchana",lastname="devi",maritalstatus="single",country="india",age=23 
+Question 5
+      var my age=25
+      var your age=30
+      var isStatementtrue="true"
+      var notdefined="undefined"
+      var novalue="null"
+Question 6
+      *parseInt()
+      *Plus sign(+)                       
+Question 7
+      *5>10
+      *2==5
+      *6!==6
+      *3<1
+      *67%2
+TASK 2
+      =>Square of a number
+           a=4
+           4*4=16
+      =>Swapping 2 numbers
+           a=10,b=20
+           a=20,b=10
+      =>Addition of 3 numbers
+           a=1+2+3
+           a=6
+      =>Celsius to Fahrenheit conversion
+           fahrenheit=(celsius*9/5)+32
+      =>Meter to miles
+           const miles=meters/1609.34
+      =>Pounds to kg
+          const kilogram=pounds*0.453592  
+      =>Calculate Batting Average
+           const battingaverage=runsScored/inningsOrAtBats;
+      =>Calculate five test scores and print their average
+            const testscore=[85,92,78,90,88];
+            const average=calculateTestAverage(testscores);
+            console.log("test Average:"+average)
+      =>Power of any number x ^ y.
+            a=2,b=3
+            2^3=8
+      =>Calculate Simple Interest
+            simple interest=(principal amount*interest rate*time)/100
+      =>Calculate area of an equilateral triangle
+            area=(side_length^2*sqrt3)/4
+      =>Area Of Isosceles Triangle
+            area=(1/2)*a*b*h
+      =>Volume Of Sphere
+            volume=(4/3)*math.PI*Math.Pow(radius,3)
+      =>Volume Of Prism
+            volume=L*W*H
+      =>Find area of a triangle.
+             const s=(a+b+c)/2
+             const area=sqrt(s*(s-a)*(s-b)*(s-c))
+      =>Give the Actual cost and Sold cost, Calculate Discount Of Product
+             discount=actual cost-sold cost
+             actual cost=100,sold cost=50
+             discount=100-50=50
+      =>Given their radius of a circle and find its diameter, circumference and area.
+             diameter(D)=2*Radius(r)
+             circumference(C)=2*math.PI*radius(r)
+             area (a)=math.PI*(radius(r))sqrt2
+      =>Given two numbers and perform all arithmetic operations.            
+             a=10,b=5
+             a+b=15,a-b=5,a*b=50.a/b=2,a%b=0
+      =>Display the asterisk pattern as shown below(No loop needed):
+        console.log("*****")
+        console.log("*****")
+        console.log("*****")
+        console.log("*****")
+        console.log("*****") 
+
+      =>Calculate electricity bill?
+       For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total
+       energy bill of that consumer if per unit rate is 10?
+              Calculate the daily energy consumption:
+              Energy consumption per day = 100 watts/hour * 24 hours/day = 2400 watt-hours (or 2.4 kilowatt-hours,
+              since 1 kilowatt = 1000 watts)
+
+              Calculate the monthly energy consumption:
+              Energy consumption per month = 2.4 kWh/day * 30 days = 72 kWh
+
+              Calculate the total cost:
+              Total cost = Energy consumption (in kWh) * Rate per unit
+              Total cost = 72 kWh * $10/kWh = $720
+              So, the total energy bill for the consumer who consumes 100 watts per hour daily for one month
+               at a rate of $10 per unit is $720.
+
+    =>Program To Calculate CGPA
+              function calculateGradePoint(grade) {
+        switch (grade) {
+        case 'A+':
+            return 4.0;
+        case 'A':
+            return 3.7;
+        case 'A-':
+            return 3.3;
+        case 'B+':
+            return 3.0;
+        case 'B':
+            return 2.7;
+        case 'B-':
+            return 2.3;
+        case 'C+':
+            return 2.0;
+        case 'C':
+            return 1.7;
+        case 'C-':
+            return 1.3;
+        case 'D':
+            return 1.0;
+        default:
+            return 0.0;
+    }
+}
+
+// Function to calculate CGPA
+function calculateCGPA(grades, credits) {
+    let totalGradePoints = 0;
+    let totalCredits = 0;
+
+    for (let i = 0; i < grades.length; i++) {
+        const gradePoint = calculateGradePoint(grades[i]);
+        totalGradePoints += gradePoint * credits[i];
+        totalCredits += credits[i];
+    }
+
+    if 
+ TASK 3
+
+ 1. Write a loop that makes seven calls to console.log to output the following triangle:
+#
+##
+###     
+####
+#####
+######
+#######
+
+           for (var i = 1; i<7; i++) {
+    var line = '';
+    for (var j = 1; j<= i; j++) {
+        line += '#';
+    }
+    console.log(line)}
+2. Iterate through the string array and print it contents
+
+      var strArray= ["<option>Jazz</option>",
+      ,"<option>Blues</option>",
+      ,"<option>New Age</option>",
+      ,"<option>Classical</option>",
+      ,"<option>Opera</option>"]
+
+
+     for (var i = 0; i < strArray.length; i++) {
+       console.log(strArray[i]);
+      } 
+    
+
+3.  write a code to count the elements in the array . Don’t use length property
+    var myarray = [11, 22, 33, 44, 55];
+
+      var count = 0;
+
+      for (var i in myarray) {
+    if (myarray.hasOwnProperty(i)) {
+        count++;
+    }
+     }
+
+     console.log("The number of elements in the array is: " + count);
+
+
+Objects:
+
+1.   What the output
+
+     myobject = {1:one,”11":1,”name”:”arun”}
+     console.log(myobject.11); 
+     console.log(myobject.name);
+
+ name : arun
+ 11  : 1
+
+2.    Add a new key value pair to myobject
+      key : ten
+      value : ten
+
+myobject = {1:one,”11":1,”name”:”arun”}
+//your code goes here
+console.log(myobject);
+{"1":"one","11":1,"name":"arun","ten":"ten"} // Quotes might not get displayed that fine.  
+
+    answer: to adding new value
+           objectname.keyname=value
+
+
+3.    Write out an object literal to represent the data below.
+
+      Guvi, Geek, 6, IIT-M RP,Chennai.
+
+
+          var data = {
+    name: "Guvi",
+    category: "Geek",
+    rating: 6,
+    location: "IIT-M RP, Chennai"
+};
+
+console.log(data);
+
+4.   How would you represent the following data using a combination of object literals and arrays?
+     (You can describe a strategy without typing or writing out the whole thing.)
+
+Guvi, Geek, 6, IIT-M RP,Chennai.
+Amazon, Inc, 31, SP Infocity, Chennai.
+Google, Alphabet, 34 Amphitheater Parkway, MountainView.
+Tesla, Inc , 32, 333 Santana Row,San Jose.
+  
+    var companies = [
+    {
+        name: "Guvi",
+        category: "Geek",
+        age: 6,
+        location: "IIT-M RP, Chennai"
+    },
+    {
+        name: "Amazon, Inc",
+        category: "E-commerce",
+        age: 31,
+        location: "SP Infocity, Chennai"
+    },
+    {
+        name: "Google",
+        category: "Technology",
+        age: 34,
+        location: "34 Amphitheater Parkway, Mountain View"
+    },
+    {
+        name: "Tesla, Inc",
+        category: "Automotive",
+        age: 32,
+        location: "333 Santana Row, San Jose"
+    }
+];
+
+6.   Find the length of your foods array
+     Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”.
+
+let friends = [
+“Mari”,
+“MaryJane”,
+“CaptianAmerica”,
+“Munnabai”,
+“Jeff”,
+“AAK chandran”
+];
+
+function dataHandling(input){
+for (var i = 0; i < input.length; i++) {
+
+}
+}
+
+dataHandling(friends);
+
+
+      var foods = ["pizza", "burger", "sushi", "pasta", "ice cream"];
+  var lengthOfFoods = foods.length;
+console.log(lengthOfFoods);
+
+
+
+
